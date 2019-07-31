@@ -13,7 +13,7 @@ class EmailAddressParser
     def parse
         array = @email_addresses.split(/[, ]/)
         array.select { |item| item.length > 0}.uniq
-        
+
     end
 
 
