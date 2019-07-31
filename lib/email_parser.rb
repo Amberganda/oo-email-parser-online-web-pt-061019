@@ -11,8 +11,10 @@ class EmailAddressParser
     end
 
     def parse
-        array = @email_addresses.split(/[, ]/)
-        array.select { |item| item.length > 0}.uniq
+        @email_addresses
+            .split(/[, ]/)
+            .select { |item| item.length > 0}
+            .uniq
 
     end
 
